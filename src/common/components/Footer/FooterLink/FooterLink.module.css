@@ -1,0 +1,12 @@
+.root {
+    &:is([data-active],[aria-current='page']):hover {
+        background-color: transparent;
+    }
+    flex-direction: column;
+}
+
+.section {
+    &[data-position='left'] {
+        margin-inline-end: 0;
+    }
+}

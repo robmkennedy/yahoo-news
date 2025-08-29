@@ -1,0 +1,47 @@
+{
+    "app": {
+        "header": {
+            "title": "Stories",
+            "nav": {
+                "stories": "Stories",
+                "about": "About"
+            }
+        },
+        "footer": {
+            "navs": {
+                "stories": "Stories",
+                "about": "About"
+            }
+        }
+    },
+    "common": {
+        "grid": {
+            "more": "Show More",
+            "error": "An error occurred while loading items.",
+            "empty": "No items matching the search were found."
+        }
+    },
+    "search": {
+        "input": {
+            "button": "Search",
+            "label": "Search name",
+            "placeholder": "Enter name",
+            "clear": "Clear search"
+        },
+        "results": {
+            "loading": "Searching for items...",
+            "enter": "Enter a search term above to show results.",
+            "error": "An error occurred while searching for results."
+        },
+        "details": {
+            "loading": "Loading details...",
+            "error": "An error occurred while loading details."
+        }
+    },
+    "about": {
+        "markdown": {
+            "loading": "Loading information...",
+            "error": "An error occurred while loading information."
+        }
+    }
+}
