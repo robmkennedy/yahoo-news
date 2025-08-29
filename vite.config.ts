@@ -6,7 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react(), tsconfigPaths()],
-    base: '/aol-stories/',
+    base: '/aol-news/',
     test: {
         globals: true,
         environment: 'jsdom',

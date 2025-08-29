@@ -1,16 +1,16 @@
 import { HeaderLink } from '@common/components/Header/HeaderNav/HeaderLink/HeaderLink';
-import aboutIcon from '@assets/images/info.svg';
+import aboutIcon from '@assets/images/about.svg';
+import storiesIcon from '@assets/images/stories.svg';
 import { useTranslation } from 'react-i18next';
+import styles from './HeaderNav.module.css';
 
 export function HeaderNav() {
-    const { t } = useTranslation('app.header.nav');
+    const { t } = useTranslation();
 
     return (
-        <div>
-            <HeaderLink to={'search'} icon={aboutIcon} label={t('search')} />
-            <HeaderLink to={'items'} icon={aboutIcon} label={t('app.header.nav.items')} />
-            <HeaderLink to={'charts'} icon={aboutIcon} label={t('app.header.nav.charts')} />
-            <HeaderLink to={'about'} icon={aboutIcon} label={t('about')} />
-        </div>
+        <nav className={styles.headerNav}>
+            <HeaderLink to={'stories'} icon={storiesIcon} label={t('app.header.nav.stories')} />
+            <HeaderLink to={'about'} icon={aboutIcon} label={t('app.header.nav.about')} />
+        </nav>
     );
 }

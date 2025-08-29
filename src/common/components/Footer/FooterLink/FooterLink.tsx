@@ -9,8 +9,6 @@ type FooterLinkProps = {
 
 export function FooterLink({ to, label, icon }: FooterLinkProps) {
     return (
-        <NavLink
-            to={to}
-        >{label}</NavLink>
+        <NavLink to={to}>{icon}{label}</NavLink>
     );
 }
