@@ -1,5 +1,0 @@
-.root {
-    &:is([data-active],[aria-current='page']):hover {
-        background-color: transparent;
-    }
-}

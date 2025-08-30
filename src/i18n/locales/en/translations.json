@@ -3,8 +3,8 @@
         "header": {
             "title": "News",
             "nav": {
-                "stories": "Stories",
-                "about": "About"
+                "stories": "Today's Stories",
+                "about": "About This Page"
             }
         },
         "footer": {

@@ -1,8 +1,0 @@
-.headerLogo {
-    display: flex;
-    align-items: center;
-
-    img {
-        padding-right: var(--spacing-sm);
-    }
-}

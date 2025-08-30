@@ -14,6 +14,7 @@
     --z-index-overlay: 400;
     --z-index-max: 9999;
 
+    --container-width: 1140px;
 
     --scale: 1;
     --cursor-type: default;

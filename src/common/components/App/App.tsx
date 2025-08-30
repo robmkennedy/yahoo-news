@@ -1,13 +1,20 @@
-import { Main } from '@common/components/Main/Main';
-import { Header } from '@common/components/Header/Header';
+import { MainPanel } from '@common/components/MainPanel/MainPanel';
+import { HeaderPanel } from '@common/components/HeaderPanel/HeaderPanel';
 import { Footer } from '@common/components/Footer/Footer';
+import './App.css';
 
 export function App() {
     return (
         <>
-            <Header />
-            <Main />
-            <Footer />
+            <header>
+                <HeaderPanel />
+            </header>
+            <main>
+                <MainPanel />
+            </main>
+            <footer>
+                <Footer />
+            </footer>
         </>
     );
 }

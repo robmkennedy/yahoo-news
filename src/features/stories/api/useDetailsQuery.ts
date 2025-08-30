@@ -1,18 +1,13 @@
-import axios from 'axios';
-import type { DetailsQuery, DetailsResult } from '~features/search/types/searchTypes';
 import { useQuery } from '@tanstack/react-query';
 
-const apiKey = 'eb143593';
-
-const fetchDetails = async (imdbID: string | undefined): Promise<DetailsResult> => {
-    const response = await axios.get(`https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`);
-    return response.data;
+const fetchSlideshow = async (): Promise<SlideshowResponse> => {
+    const response = await fetch(`https://s.yimg.com/cv/apiv2/default/20200528/test.json`);
+    return response.data.json();
 };
 
-export const useDetailsQuery = ({ imdbID }: DetailsQuery) => {
+export const useSlideshowQuery = () => {
     return useQuery({
-        queryKey: ['details', imdbID],
-        queryFn: () => fetchDetails(imdbID),
-        enabled: !!imdbID
+        queryKey: ['slideshow'],
+        queryFn: () => fetchSlideshow()
     });
 };

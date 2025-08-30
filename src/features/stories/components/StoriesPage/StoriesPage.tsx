@@ -1,4 +1,8 @@
 import { Page } from '@/common/components/Page/Page';
+import { SideLayout } from '@common/components/SideLayout/SideLayout';
+import { CenterPanel } from '@features/stories/components/CenterPanel/CenterPanel';
+import { SidePanel } from '@features/stories/components/SidePanel/SidePanel';
+import { Container } from '@common/components/Container/Container';
 
 /**
  * The home page of the application. It presents a search bar to the user allowing
@@ -7,8 +11,9 @@ import { Page } from '@/common/components/Page/Page';
  */
 export function StoriesPage() {
     return (
-        <Page>
-            Stories Page
-        </Page>
+        <Container>
+        <SideLayout center={<CenterPanel/>} side={<SidePanel/>}>
+        </SideLayout>
+        </Container>
     );
 }
