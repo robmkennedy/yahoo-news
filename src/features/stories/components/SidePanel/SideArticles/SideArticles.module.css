@@ -1,0 +1,14 @@
+.sideArticles {
+
+}
+
+.sideArticlesTitle {
+    font-size: var(--h5-font-size);
+    font-weight: 500;
+}
+
+.sideArticlesItems {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}

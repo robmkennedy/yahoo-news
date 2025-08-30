@@ -6,7 +6,7 @@ export type ArticleData = {
     url: string
 }
 
-export type SlideshowData = {
+export type NewsData = {
     data: ArticleData[];
     count: number;
 }

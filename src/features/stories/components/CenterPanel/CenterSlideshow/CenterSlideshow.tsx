@@ -1,17 +1,17 @@
 import type { ReactNode } from 'react';
-import { useSlideArticlesQuery } from '@features/stories/api/useSlideArticlesQuery';
-import { SlideArticle } from '@features/stories/components/SlideArticle/SlideArticle';
+import { useSlideshowNewsQuery } from '@features/stories/api/useSlideshowNewsQuery';
+import { CenterSlide } from '@features/stories/components/CenterPanel/CenterSlideshow/CenterSlide/CenterSlide';
 import { Slideshow } from '@common/components/Slideshow/Slideshow';
 import { Article } from '@features/stories/components/Article/Article';
 import styles from './CenterSlideshow.module.css';
 
 export function CenterSlideshow() {
-    const slideshowResponse = useSlideArticlesQuery();
+    const slideshowResponse = useSlideshowNewsQuery();
 
     let items: ReactNode[] = [];
     if (slideshowResponse.isSuccess) {
         items = slideshowResponse.data.data.map((articleData) => {
-            return <SlideArticle key={articleData.id} data={articleData}/>
+            return <CenterSlide key={articleData.id} data={articleData}/>
         })
     }
 

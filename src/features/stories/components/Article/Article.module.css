@@ -1,3 +1,18 @@
 .article {
     display: flex;
+
+    &.center {
+        border: 1px solid green;
+        flex-direction: column;
+    }
+
+    &.sidebar {
+        border: 1px solid green;
+        flex-direction: column;
+    }
+}
+
+.articleImage {
+    width: 100%;
+    height: 200px;
 }

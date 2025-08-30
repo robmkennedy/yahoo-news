@@ -1,15 +1,16 @@
-import styles from './Article.module.css';
 import type { ArticleData } from '@features/stories/types/storiesTypes';
+import styles from './Article.module.css';
 
 type ArticleProps = {
-    type: 'center' | 'more';
+    type: 'center' | 'sidebar';
     data: ArticleData;
 };
 
-export function Article({ image, headline }: ArticleProps) {
+export function Article({ type, data }: ArticleProps) {
     return (
-        <div className={styles.article}>
-            <img src={image} alt={headline} />
-        </div>
+        <a href={data.url} target={'_blank'} className={`${styles.article} ${styles[type]}`}>
+            <div className={styles.articleImage} style={{ backgroundImage: `url(${data.image_cdn})` }} />
+            <div className={styles.articleTitle}>{data.title_a}</div>
+        </a>
     );
 }

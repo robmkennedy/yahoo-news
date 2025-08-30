@@ -1,5 +1,5 @@
-import { CenterArticles } from '@features/stories/components/CenterArticles/CenterArticles';
-import { CenterSlideshow } from '@features/stories/components/CenterSlideshow/CenterSlideshow';
+import { CenterArticles } from '@features/stories/components/CenterPanel/CenterArticles/CenterArticles';
+import { CenterSlideshow } from '@features/stories/components/CenterPanel/CenterSlideshow/CenterSlideshow';
 import styles from './CenterPanel.module.css';
 
 export function CenterPanel() {
