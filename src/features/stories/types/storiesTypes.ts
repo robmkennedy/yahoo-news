@@ -1,11 +1,12 @@
-type ArticleResponse = {
+export type ArticleData = {
+    id: number
     title_a: string
     image_cdn: string
     summary: string
     url: string
 }
 
-type SlideshowResponse = {
-    data: ArticleResponse[];
+export type SlideshowData = {
+    data: ArticleData[];
     count: number;
 }

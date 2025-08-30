@@ -15,10 +15,9 @@
         }
     },
     "common": {
-        "grid": {
-            "more": "Show More",
-            "error": "An error occurred while loading items.",
-            "empty": "No items matching the search were found."
+        "error": {
+            "title": "Houston, we have a problem",
+            "message": "An unexpected error has occurred. Sorry about that."
         }
     },
     "search": {
