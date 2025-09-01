@@ -1,5 +1,18 @@
 .centerSlide {
     display: block;
-    height: 100%;
-    background-size: cover;
+    position: relative;
+
+    img {
+        width: 100%;
+        display: block;
+        border-radius: var(--radius-md);
+        aspect-ratio: var(--article-aspect-ratio);
+    }
+
+    .description {
+        position: absolute;
+        bottom: 0;
+    }
 }
+
+

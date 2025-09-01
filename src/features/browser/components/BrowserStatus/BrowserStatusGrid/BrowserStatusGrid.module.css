@@ -1,0 +1,28 @@
+.browserStatusGrid {
+    .title {
+        padding-bottom: var(--padding-md);
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: var(--padding-sm);
+
+        .status {
+            display: flex;
+            align-items: center;
+
+            svg {
+                width: var(--icon-width);
+                margin-right: var(--padding-sm);
+            }
+
+            &:global(.true) {
+                color: green;
+            }
+            &:global(.false) {
+                color: red;
+            }
+        }
+    }
+}

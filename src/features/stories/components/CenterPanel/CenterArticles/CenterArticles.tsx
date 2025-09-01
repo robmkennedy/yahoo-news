@@ -1,9 +1,12 @@
 import { Article } from '@features/stories/components/Article/Article';
 import { useCenterNewsQuery } from '@features/stories/api/useCenterNewsQuery';
 import styles from './CenterArticles.module.css';
+import { Card } from '@common/components/Card/Card';
+import { useTranslation } from 'react-i18next';
 
 export function CenterArticles() {
     const { data, isPending, isSuccess, isError } = useCenterNewsQuery();
+    const { t } = useTranslation();
 
     let content = null;
     if (isError) {
@@ -17,8 +20,8 @@ export function CenterArticles() {
     }
 
     return (
-        <div className={styles.centerArticles}>
-            {content}
-        </div>
+        <Card title={t('stories.title')}>
+            <div className={styles.centerArticles}>{content}</div>
+        </Card>
     );
 }

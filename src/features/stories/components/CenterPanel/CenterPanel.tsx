@@ -3,6 +3,7 @@ import { CenterSlideshow } from '@features/stories/components/CenterPanel/Center
 import styles from './CenterPanel.module.css';
 
 export function CenterPanel() {
+
     return (
         <div className={styles.centerPanel}>
             <CenterSlideshow/>

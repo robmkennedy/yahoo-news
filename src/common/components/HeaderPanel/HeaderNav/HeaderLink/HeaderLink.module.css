@@ -1,3 +1,6 @@
 .headerLink {
-
+    &:global(.active) {
+        font-weight: var(--font-weight-bold);
+        color: var(--color-batcave);
+    }
 }

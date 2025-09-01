@@ -15,26 +15,39 @@
         }
     },
     "common": {
+        "close": "Close",
         "error": {
             "title": "Houston, we have a problem",
             "message": "An unexpected error has occurred. Sorry about that."
         }
     },
-    "search": {
-        "input": {
-            "button": "Search",
-            "label": "Search name",
-            "placeholder": "Enter name",
-            "clear": "Clear search"
-        },
-        "results": {
-            "loading": "Searching for items...",
-            "enter": "Enter a search term above to show results.",
-            "error": "An error occurred while searching for results."
-        },
-        "details": {
-            "loading": "Loading details...",
-            "error": "An error occurred while loading details."
+    "stories": {
+        "title": "Stories for You"
+    },
+    "registration": {
+        "title": "Let us send you our Newsletter",
+        "description": "Our editors will email you a roundup of their favourite stories from across AOL",
+        "placeholder": "Enter your email address",
+        "button": "Sign Up",
+        "result": {
+            "invalid": "Please enter a a valid email address.",
+            "already": "The email address has already been registered. Please wait for our next newsletter.",
+            "thanks": "Thank you for registering. We will be in touch shortly!"
+        }
+    },
+    "sidebar": {
+        "articles": {
+            "title": "Read More",
+            "message": "An unexpected error has occurred. Sorry about that."
+        }
+    },
+    "browser": {
+        "button": "Show Browser Information",
+        "title": "Browser Information",
+        "config": {
+            "agent": "User Agent",
+            "apis": "Supported Experimental Web APIs",
+            "styles": "Supported CSS Features"
         }
     },
     "about": {

@@ -1,18 +1,25 @@
 .article {
     display: flex;
+    align-items: flex-start;
+
+    .articleImage {
+        width: 100%;
+        height: auto;
+        aspect-ratio: var(--article-aspect-ratio);
+        border-radius: var(--radius-md);
+    }
 
     &.center {
-        border: 1px solid green;
         flex-direction: column;
+        .articleImage {
+            margin-bottom: var(--padding-lg);
+        }
     }
 
     &.sidebar {
-        border: 1px solid green;
-        flex-direction: column;
+        .articleImage {
+            margin-right: var(--padding-lg);
+            width: 50%;
+        }
     }
-}
-
-.articleImage {
-    width: 100%;
-    height: 200px;
 }

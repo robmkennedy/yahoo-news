@@ -9,7 +9,7 @@ type ArticleProps = {
 export function Article({ type, data }: ArticleProps) {
     return (
         <a href={data.url} target={'_blank'} className={`${styles.article} ${styles[type]}`}>
-            <div className={styles.articleImage} style={{ backgroundImage: `url(${data.image_cdn})` }} />
+            <img className={styles.articleImage} src={data.image_cdn} />
             <div className={styles.articleTitle}>{data.title_a}</div>
         </a>
     );

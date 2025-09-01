@@ -11,8 +11,8 @@ export function CenterSlideshow() {
     let items: ReactNode[] = [];
     if (slideshowResponse.isSuccess) {
         items = slideshowResponse.data.data.map((articleData) => {
-            return <CenterSlide key={articleData.id} data={articleData}/>
-        })
+            return <CenterSlide key={articleData.id} data={articleData} />;
+        });
     }
 
     return (

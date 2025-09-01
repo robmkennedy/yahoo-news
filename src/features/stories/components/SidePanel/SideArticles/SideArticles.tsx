@@ -1,9 +1,12 @@
 import { useSidebarNewsQuery } from '@features/stories/api/useSidebarNewsQuery';
 import { Article } from '@features/stories/components/Article/Article';
 import styles from './SideArticles.module.css';
+import { Card } from '@common/components/Card/Card';
+import { useTranslation } from 'react-i18next';
 
 export function SideArticles() {
     const { data, isPending, isSuccess, isError } = useSidebarNewsQuery();
+    const { t } = useTranslation();
 
     let content = null;
     if (isError) {
@@ -17,9 +20,10 @@ export function SideArticles() {
     }
 
     return (
-        <div className={styles.sideArticles}>
-            <div className={styles.sideArticlesTitle}>Title For More</div>
-            <div className={styles.sideArticlesItems}>{content}</div>
-        </div>
+        <Card title={t('sidebar.articles.title')}>
+            <div className={styles.sideArticles}>
+                <div className={styles.sideArticlesItems}>{content}</div>
+            </div>
+        </Card>
     );
 }

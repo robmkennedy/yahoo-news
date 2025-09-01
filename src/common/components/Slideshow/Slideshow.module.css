@@ -1,6 +1,29 @@
 .slideshow {
+    width: 100%;
+
+    .slideshowGrid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        overflow-x: hidden;
+
+        .slide {
+
+        }
+    }
 }
 
-.slideshowWindow {
-    height: 26rem;
+.slideshowPrev {
+    /*position: absolute;*/
+    top: 50%
+}
+
+.slideshowNext {
+    /*position: absolute;*/
+    top: 50%
+}
+
+.slideshowCount {
+    position: absolute;
+    top: 50%
 }

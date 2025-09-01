@@ -1,0 +1,10 @@
+.browserStatus {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+
+    .title {
+        padding-bottom: var(--padding-md);
+    }
+
+}
