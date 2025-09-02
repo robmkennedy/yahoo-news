@@ -1,0 +1,27 @@
+.messageBox {
+    display: flex;
+
+    .messageBoxText {
+        display: flex;
+        align-items: flex-start;
+        svg {
+            width: var(--icon-width);
+            height: var(--icon-width);
+            margin-right: var(--spacing-xxs);
+            flex-shrink: 0;
+        }
+
+        &:global(.info) {
+            color: var(--color-info);
+        }
+        &:global(.error) {
+            color: var(--color-error);
+        }
+        &:global(.warning) {
+            color: var(--color-warning);
+        }
+        &:global(.success) {
+            color: var(--color-success);
+        }
+    }
+}

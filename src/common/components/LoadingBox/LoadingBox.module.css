@@ -1,0 +1,13 @@
+.loadingBox {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--color-loading);
+
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

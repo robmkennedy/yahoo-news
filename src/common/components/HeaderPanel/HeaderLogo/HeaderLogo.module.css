@@ -1,3 +1,4 @@
 .headerLogo {
     height: 1.5rem;
+    margin-right: var(--spacing-xs);
 }

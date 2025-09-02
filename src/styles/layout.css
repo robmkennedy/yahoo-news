@@ -2,10 +2,6 @@
     --app-header-height: 3.75rem;
     --app-header-offset: 3.75rem;
     --app-header-z-index: var(--z-index-app);
-    --app-footer-height: 3.75rem;
-    --app-footer-offset: 3.75rem;
-    --app-footer-z-index: var(--z-index-app);
-
     --app-padding: var(--spacing-md);
 
     --z-index-app: 100;
@@ -29,7 +25,7 @@
     --spacing-sm: 0.75rem;
     --spacing-md: 1rem;
     --spacing-lg: 1.25rem;
-    --spacing-xl: 2rem;
+    --spacing-xl: 1.75rem;
 
     --padding-xs: 0.125rem;
     --padding-sm: 0.25rem;
@@ -37,11 +33,10 @@
     --padding-lg: 1rem;
     --padding-xl: 2rem;
 
-    --radius-xs: 0.125rem;
-    --radius-sm: 0.25rem;
-    --radius-md: 0.5rem;
+    --radius-button: 5rem;
+    --radius-xs: 0.25rem;
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
     --radius-lg: 1rem;
     --radius-xl: 2rem;
-    --radius-default: 0.25rem;
-    --radius-button: 5rem;
 }

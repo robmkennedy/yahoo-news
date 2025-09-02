@@ -1,5 +1,10 @@
 :root {
     --color-text: var(--color-batcave);
+    --color-info: blue;
+    --color-warning: orange;
+    --color-success: green;
+    --color-error: red;
+    --color-loading: #078caf;
 
 
     --primary-color-filled: var(--color-blue-filled);

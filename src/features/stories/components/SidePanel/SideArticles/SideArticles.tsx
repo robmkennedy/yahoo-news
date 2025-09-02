@@ -3,6 +3,8 @@ import { Article } from '@features/stories/components/Article/Article';
 import styles from './SideArticles.module.css';
 import { Card } from '@common/components/Card/Card';
 import { useTranslation } from 'react-i18next';
+import MessageBox from '@common/components/MessageBox/MessageBox';
+import LoadingBox from '@common/components/LoadingBox/LoadingBox';
 
 export function SideArticles() {
     const { data, isPending, isSuccess, isError } = useSidebarNewsQuery();
@@ -10,10 +12,10 @@ export function SideArticles() {
 
     let content = null;
     if (isError) {
-        content = <div>Error</div>;
+        content = <MessageBox type='error' message={t('sidebar.articles.error')}/>;
     } else if (isPending) {
-        content = <div>Loading...</div>;
-    } else {
+        content = <LoadingBox message={t('sidebar.articles.loading')}/>;
+    } else if (isSuccess) {
         content = data?.data.map((articleData) => {
             return <Article key={articleData.id} type='sidebar' data={articleData} />;
         });

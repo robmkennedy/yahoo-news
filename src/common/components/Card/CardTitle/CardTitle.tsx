@@ -8,7 +8,7 @@ export function CardTitle({ text }: CardTitleProps) {
     return (
         <div className={`${styles.cardTitle}`}>
             <div className={`${styles.cardTitleTag}`} />
-            <div className={`${styles.cardTitleText}`}>{text}</div>
+            <h3>{text}</h3>
         </div>
     );
 }

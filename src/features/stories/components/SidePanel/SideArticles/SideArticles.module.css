@@ -7,5 +7,5 @@
 .sideArticlesItems {
     display: flex;
     flex-direction: column;
-    gap: var(--padding-lg);
+    gap: var(--spacing-lg);
 }

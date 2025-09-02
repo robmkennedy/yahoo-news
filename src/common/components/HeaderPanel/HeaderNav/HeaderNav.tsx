@@ -1,5 +1,6 @@
 import { HeaderLink } from '@common/components/HeaderPanel/HeaderNav/HeaderLink/HeaderLink';
 import { useTranslation } from 'react-i18next';
+import { storiesIcon, aboutIcon } from '@/assets/images/icons';
 import styles from './HeaderNav.module.css';
 
 export function HeaderNav() {
@@ -7,8 +8,8 @@ export function HeaderNav() {
 
     return (
         <nav className={styles.headerNav}>
-            <HeaderLink to={'stories'} label={t('app.header.nav.stories')} />
-            <HeaderLink to={'about'} label={t('app.header.nav.about')} />
+            <HeaderLink to={'stories'} label={t('app.header.nav.stories')} icon={storiesIcon} />
+            <HeaderLink to={'about'} label={t('app.header.nav.about')} icon={aboutIcon} />
         </nav>
     );
 }

@@ -1,5 +1,5 @@
-.main {
-    min-height: 100dvh;
-    padding: calc(var(--app-header-offset) + var(--app-padding)) var(--app-padding)
-        calc(var(--app-footer-offset) + var(--app-padding)) var(--app-padding);
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
 }

@@ -1,14 +1,33 @@
 .slideshow {
     width: 100%;
 
+    .slideshowWindow {
+        overflow-x: hidden;
+    }
+
     .slideshowGrid {
+        position: relative;
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 100%;
-        overflow-x: hidden;
+
+        left: 0;
+        /*left: -100%;*/
+
+        &:global(.shift) {
+            left: -100%;
+        }
+
+        transition: left 2s;
+
+        /*animation: moveMeDown 0.7s ease-in;*/
+        /*animation-delay: 2s;*/
 
         .slide {
+            position: relative;
 
+            /*animation: moveMeDown 0.7s ease-in;*/
+            /*animation-delay: 2s;*/
         }
     }
 }
@@ -26,4 +45,22 @@
 .slideshowCount {
     position: absolute;
     top: 50%
+}
+
+:global(.move) {
+    animation: moveMeDown 0.7s ease-in;
+    animation-delay: 2s;
+}
+
+:global(.shift) {
+    left: -100%;
+}
+
+@keyframes moveMeDown {
+    from {
+        left: 0; /* Start position */
+    }
+    to {
+        left: -100%; /* End position */
+    }
 }

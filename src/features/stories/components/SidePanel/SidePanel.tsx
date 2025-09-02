@@ -7,8 +7,8 @@ export function SidePanel() {
     return (
         <div className={styles.sidePanel}>
             <BrowserDialog/>
-            <RegistrationForm />
             <SideArticles />
+            <RegistrationForm />
         </div>
     );
 }

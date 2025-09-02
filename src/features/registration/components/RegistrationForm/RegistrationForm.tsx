@@ -6,6 +6,7 @@ import { Button } from '@common/components/Button/Button';
 import { type ChangeEvent, useState } from 'react';
 import { validateEmail } from '@/utils/formatter';
 import type { StatusMessage } from '@common/types/commonTypes';
+import MessageBox from '@common/components/MessageBox/MessageBox';
 
 export function RegistrationForm() {
     const { t } = useTranslation();
@@ -15,19 +16,22 @@ export function RegistrationForm() {
 
     const handleClick = () => {
         if (!email) {
-            setStatus({severity: 'error', message: 'Email address required'});
+            setStatus({ severity: 'error', message: t('registration.result.required') });
         }
         if (!validateEmail(email)) {
-            setStatus({severity: 'error', message: t('registration.result.invalid')});
-        }
-        else if (registrations.includes(email)) {
-            setStatus({severity: 'info', message: t('registration.result.already')});
-        }
-        else {
+            setStatus({ severity: 'error', message: t('registration.result.invalid') });
+        } else if (registrations.includes(email)) {
+            setStatus({ severity: 'info', message: t('registration.result.already') });
+        } else {
             setRegistrations([...registrations, email]);
-            setStatus({severity: 'success', message: t('registration.result.thanks')});
+            setStatus({ severity: 'success', message: t('registration.result.thanks') });
         }
     };
+
+    let result = null;
+    if (status && status.severity) {
+        result = <MessageBox type={status.severity} message={status.message} />;
+    }
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
@@ -36,11 +40,11 @@ export function RegistrationForm() {
     return (
         <Card>
             <div className={styles.registrationForm}>
-                <div className={styles.registrationTitle}>{t('registration.title')}</div>
+                <h3 className={styles.registrationTitle}>{t('registration.title')}</h3>
                 <div className={styles.registrationDescription}>{t('registration.description')}</div>
                 <TextInput placeholder={t('registration.placeholder')} onChange={handleChange} />
-                {status && status.message}
-                <Button label={t('registration.button')} onClick={handleClick} />
+                {result}
+                <Button onClick={handleClick}>{t('registration.button')}</Button>
             </div>
         </Card>
     );

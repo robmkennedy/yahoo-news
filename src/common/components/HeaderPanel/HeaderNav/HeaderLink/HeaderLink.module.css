@@ -1,4 +1,12 @@
 .headerLink {
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: var(--icon-width-header);
+        margin-right: var(--spacing-xs);
+    };
+
     &:global(.active) {
         font-weight: var(--font-weight-bold);
         color: var(--color-batcave);
