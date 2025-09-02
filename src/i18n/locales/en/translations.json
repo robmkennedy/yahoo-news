@@ -3,14 +3,8 @@
         "header": {
             "title": "News",
             "nav": {
-                "stories": "Today's Stories",
+                "today": "Today's News",
                 "about": "About This Page"
-            }
-        },
-        "footer": {
-            "navs": {
-                "stories": "Stories",
-                "about": "About"
             }
         }
     },
@@ -21,12 +15,25 @@
             "message": "An unexpected error has occurred. Sorry about that."
         }
     },
+    "headlines": {
+        "title": "Headlines",
+        "articles": {
+            "loading": "Loading headlines...",
+            "error": "We were unable to load any headlines!"
+        }
+    },
     "stories": {
-        "headlines": "Headlines",
-        "forYou": "Stories for You",
+        "title": "Stories for You",
         "articles": {
             "loading": "Loading some stories just for you...",
             "error": "We were unable to load any stories for you!"
+        }
+    },
+    "more": {
+        "articles": {
+            "title": "Read More",
+            "loading": "Loading more articles...",
+            "error": "Unable to load any more articles!"
         }
     },
     "registration": {
@@ -35,17 +42,10 @@
         "placeholder": "Enter your email address",
         "button": "Sign Up",
         "result": {
-            "required": "Please enter an email address.",
+            "required": "Please enter an email address. You would love our newsletter!",
             "invalid": "The email address does not have the correct format.",
-            "already": "The email address has already been registered. Please wait for our next newsletter.",
+            "already": "The email address has already been registered. Please wait!",
             "thanks": "Thank you for registering. We will be in touch shortly!"
-        }
-    },
-    "sidebar": {
-        "articles": {
-            "title": "Read More",
-            "loading": "Loading more articles...",
-            "error": "Unable to load any more articles!"
         }
     },
     "browser": {

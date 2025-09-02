@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router';
 import { App } from '@common/components/App/App';
 import { AboutPage } from '@features/about/components/AboutPage/AboutPage';
-import { StoriesPage } from '@features/stories/components/StoriesPage/StoriesPage';
+import { TodayPage } from '@features/today/components/TodayPage/TodayPage';
 import { ErrorFallback } from '@common/components/ErrorFallback/ErrorFallback';
 
 export const router = createBrowserRouter(
@@ -11,9 +11,9 @@ export const router = createBrowserRouter(
             Component: App,
             children: [
                 { index: true, element: <Navigate to='/stories' /> },
-                { path: '/stories', Component: StoriesPage },
+                { path: '/today', Component: TodayPage },
                 { path: '/about', Component: AboutPage },
-                { path: '/*', element: <Navigate to='/stories' /> }
+                { path: '/*', element: <Navigate to='/today' /> }
             ],
             errorElement: <ErrorFallback/>
         }

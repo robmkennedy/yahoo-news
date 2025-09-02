@@ -5,7 +5,9 @@
     --color-success: green;
     --color-error: red;
     --color-loading: #078caf;
-
+    --color-hover: #ad4efb;
+    --color-input-border: var(--color-seagull);
+    --color-control-background: rgba(0, 0, 0, 0.3);
 
     --primary-color-filled: var(--color-blue-filled);
     --primary-color-filled-hover: var(--color-blue-filled-hover);
@@ -27,9 +29,8 @@
     --color-battleship: #5b636a;
     --color-black: #000;
     --color-grape: #6001d2;
-    --color-seagull: #e0e4e9;
+    --color-seagull: #c5d1da;
     --color-white: #fff;
-
 
     --primary-color-0: var(--color-blue-0);
     --primary-color-1: var(--color-blue-1);

@@ -1,0 +1,12 @@
+.moreArticles {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-lg);
+
+    .moreArticlesItems {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+}
+

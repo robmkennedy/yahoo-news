@@ -11,3 +11,9 @@ export const limitString = (input: string, length: number): string => {
     }
     return result;
 };
+
+/* Ensure the string is safe to display to avoif xss scripts */
+export const decodeString = (input: string): string => {
+    const doc = new DOMParser().parseFromString(input, 'text/html');
+    return doc.documentElement.textContent || '';
+};

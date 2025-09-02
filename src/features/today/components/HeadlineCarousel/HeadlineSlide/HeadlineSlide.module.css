@@ -1,6 +1,11 @@
-.centerSlide {
+.headlineSlide {
     display: block;
     position: relative;
+    color: var(--color-white);
+
+    &:hover {
+        color: var(--color-hover);
+    }
 
     img {
         width: 100%;
@@ -11,8 +16,9 @@
 
     .description {
         position: absolute;
+        padding: var(--padding-lg) var(--padding-lg);
         bottom: 0;
+        border-radius: var(--radius-md);
+        background-color: var(--color-control-background);
     }
 }
-
-

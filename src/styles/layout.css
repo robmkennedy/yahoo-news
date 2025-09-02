@@ -4,6 +4,10 @@
     --app-header-z-index: var(--z-index-app);
     --app-padding: var(--spacing-md);
 
+    --input-padding: 1rem;
+    --input-height: 2.25rem;
+    --input-radius: var(--radius-sm);
+
     --z-index-app: 100;
     --z-index-modal: 200;
     --z-index-popover: 300;

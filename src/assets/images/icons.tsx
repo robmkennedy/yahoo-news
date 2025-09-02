@@ -25,7 +25,7 @@ export const aboutIcon = (
     </svg>
 );
 
-export const storiesIcon = (
+export const todayIcon = (
     <svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'>
         <path
             fill='currentColor'
@@ -83,5 +83,23 @@ export const loadingIcon = (
                 values='0 12 12;360 12 12'
             />
         </path>
+    </svg>
+);
+
+export const prevIcon = (
+    <svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'>
+        <path
+            fill='currentColor'
+            d='M32.06 8.19a1.5 1.5 0 0 1 0 2.12L18.622 23.75l13.44 13.44a1.5 1.5 0 0 1-2.122 2.12l-14.5-14.5a1.5 1.5 0 0 1 0-2.12l14.5-14.5a1.5 1.5 0 0 1 2.122 0'
+        />
+    </svg>
+);
+
+export const nextIcon = (
+    <svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'>
+        <path
+            fill='currentColor'
+            d='M15.94 39.31a1.5 1.5 0 0 1 0-2.12l13.439-13.44l-13.44-13.44a1.5 1.5 0 0 1 2.122-2.12l14.5 14.5a1.5 1.5 0 0 1 0 2.12l-14.5 14.5a1.5 1.5 0 0 1-2.122 0'
+        />
     </svg>
 );

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { TextInput } from '@common/components/TextInput/TextInput';
 import { Button } from '@common/components/Button/Button';
 import { type ChangeEvent, useState } from 'react';
-import { validateEmail } from '@/utils/formatter';
+import { decodeString, validateEmail } from '@/utils/formatter';
 import type { StatusMessage } from '@common/types/commonTypes';
 import MessageBox from '@common/components/MessageBox/MessageBox';
 
@@ -17,8 +17,7 @@ export function RegistrationForm() {
     const handleClick = () => {
         if (!email) {
             setStatus({ severity: 'error', message: t('registration.result.required') });
-        }
-        if (!validateEmail(email)) {
+        } else if (!validateEmail(email)) {
             setStatus({ severity: 'error', message: t('registration.result.invalid') });
         } else if (registrations.includes(email)) {
             setStatus({ severity: 'info', message: t('registration.result.already') });
@@ -34,7 +33,8 @@ export function RegistrationForm() {
     }
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setEmail(e.target.value);
+        setStatus(null);
+        setEmail(decodeString(e.target.value));
     };
 
     return (
@@ -42,7 +42,7 @@ export function RegistrationForm() {
             <div className={styles.registrationForm}>
                 <h3 className={styles.registrationTitle}>{t('registration.title')}</h3>
                 <div className={styles.registrationDescription}>{t('registration.description')}</div>
-                <TextInput placeholder={t('registration.placeholder')} onChange={handleChange} />
+                <TextInput placeholder={t('registration.placeholder')} onChange={handleChange} onEnter={handleClick} />
                 {result}
                 <Button onClick={handleClick}>{t('registration.button')}</Button>
             </div>

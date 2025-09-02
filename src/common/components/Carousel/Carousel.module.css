@@ -1,0 +1,50 @@
+.carousel {
+    width: 100%;
+    position: relative;
+
+    .carouselSlides {
+        .slide {
+            display: none;
+
+            &.visibleSlide {
+                display: block;
+            }
+        }
+    }
+
+    .carouselCount {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: var(--font-size-16);
+        border-radius: var(--radius-md);
+        padding: var(--padding-md) var(--padding-lg);
+        background: var(--color-control-background);
+        color: var(--color-white);
+    }
+
+    .carouselButton {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: var(--spacing-xl) var(--padding-md);
+        background-color: var(--color-control-background);
+        color: var(--color-white);
+        border: 0;
+
+        &:hover {
+            color: var(--color-hover);
+        }
+
+        &.carouselPrev {
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            left: 0
+        }
+
+        &.carouselNext {
+            border-radius: var(--radius-md) 0 0 var(--radius-md);
+            right: 0;
+        }
+    }
+
+}
