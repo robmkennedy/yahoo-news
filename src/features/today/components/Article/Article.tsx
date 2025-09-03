@@ -1,5 +1,5 @@
 import type { ArticleData } from '@features/today/types/todayTypes';
-import { decodeString } from '@/utils/formatter';
+import { decodeString } from '@common/utils/formatter';
 import styles from './Article.module.css';
 
 type ArticleProps = {

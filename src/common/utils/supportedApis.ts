@@ -192,8 +192,4 @@ export const supportedApis = () => {
 
 supportedApis();
 
-apisMap.forEach((value, key) => {
-    console.log(key + ': ' + value);
-});
-
 

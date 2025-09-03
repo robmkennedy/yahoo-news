@@ -1,5 +1,5 @@
 import type { ArticleData } from '@features/today/types/todayTypes';
-import { decodeString, limitString } from '@/utils/formatter';
+import { decodeString, limitString } from '@common/utils/formatter';
 import styles from './HeadlineSlide.module.css';
 
 type HeadlineSlideProps = {

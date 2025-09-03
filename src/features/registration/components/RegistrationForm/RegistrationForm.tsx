@@ -4,7 +4,7 @@ import { Card } from '@common/components/Card/Card';
 import { Button } from '@common/components/Button/Button';
 import { TextInput } from '@common/components/TextInput/TextInput';
 import { MessageBox } from '@common/components/MessageBox/MessageBox';
-import { decodeString, validateEmail } from '@/utils/formatter';
+import { decodeString, validateEmail } from '@common/utils/formatter';
 import { useTranslation } from 'react-i18next';
 import styles from './RegistrationForm.module.css';
 

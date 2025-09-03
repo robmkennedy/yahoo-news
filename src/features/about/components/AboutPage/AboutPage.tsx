@@ -5,6 +5,7 @@ import { MessageBox } from '@common/components/MessageBox/MessageBox';
 import { useAboutMarkupQuery } from '@features/about/api/useAboutMarkupQuery';
 import { useTranslation } from 'react-i18next';
 import aboutText from "@assets/docs/about.md?raw";
+import readmeText from "/README.md?raw";
 
 export function AboutPage() {
     const { data, isPending, isSuccess, isError } = useAboutMarkupQuery();
@@ -17,7 +18,7 @@ export function AboutPage() {
         content = <LoadingBox message={t('about.loading')} />;
     } else if (isSuccess) {
         if (data) {
-            content = <ReactMarkdown children={aboutText} />;
+            content = <ReactMarkdown children={readmeText} />;
         }
     }
 

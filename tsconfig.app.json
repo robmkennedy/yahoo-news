@@ -29,10 +29,8 @@
       "@features/*": ["./src/features/*"],
       "@i18n/*": ["./src/i18n/*"],
       "@routes/*": ["./src/routes/*"],
-      "@shared/*": ["./src/shared/*"],
       "@state/*": ["./src/state/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@test/*": ["./src/test/*"]
+      "@styles/*": ["./src/styles/*"]
     }
   },
   "include": ["src"]

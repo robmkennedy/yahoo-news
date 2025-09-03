@@ -1,6 +1,6 @@
 import { BrowserStatusGrid } from '@features/browser/components/BrowserStatus/BrowserStatusGrid/BrowserStatusGrid';
 import { useTranslation } from 'react-i18next';
-import { apisMap } from '@/utils/supportedApis';
+import { apisMap } from '@common/utils/supportedApis';
 import styles from './BrowserStatus.module.css';
 
 export function BrowserStatus() {
