@@ -1,0 +1,125 @@
+{
+    "count": 3,
+    "data": [
+        {
+            "position": 1,
+            "id": 89400,
+            "pinned": false,
+            "plid": 808072610,
+            "title_a": "This car loses more value in three years than any other",
+            "title_b": "",
+            "url": "https://www.autoblog.com/photos/cars-that-depreciate-fastest/",
+            "image": "https://aol-releases-assets-production.s3.amazonaws.com/generator/10943F67.jpg",
+            "image_cdn": "https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Faol-releases-assets-production.s3.amazonaws.com%2Fgenerator%2F10943F67.jpg&format=jpg&quality=80&thumbnail=640%2C420&client=14d356460ccd1a3da7ce&signature=eaa9204d968870ed9f8f23eb66c7c762c9b7d2af",
+            "image_credit": "Audi",
+            "summary": "One of the worst things about buying a new car is seeing its value drop so fast after you drive it off the lot.",
+            "link_line": "Ten cars that plummet in value after just a few years",
+            "category": "Autos",
+            "source": {
+                "name": "Autoblog",
+                "key": "autoblog",
+                "url": "http://www.autoblog.com/",
+                "sponsored": false,
+                "hide": false
+            },
+            "related_links": {
+                "title": "More from Autoblog",
+                "links": [
+                    {
+                        "title": "Best deals on the most popular vehicles",
+                        "url": "https://www.autoblog.com/photos/photos-best-new-car-deals/"
+                    },
+                    {
+                        "title": "Car companies ranked by initial quality",
+                        "url": "https://www.autoblog.com/2020/06/24/jd-power-initial-quality-dodge-kia-tesla/"
+                    }
+                ]
+            },
+            "start_date": "2020-07-20 15:08:00 -0400",
+            "end_date": "2020-07-21 15:00:00 -0400",
+            "ab": {
+                "winner": false
+            }
+        },
+        {
+            "position": 2,
+            "id": 219221,
+            "pinned": false,
+            "plid": 799810126,
+            "title_a": "Satisfy your late night cravings with these 30 snacks",
+            "title_b": "",
+            "url": "https://www.tacorelish.com/late-night-health-snacks/?utm_source=ap&utm_campaign=8vf-dtm-us-n-0-0-200720-tr-ap-a0&utm_medium=aol-ap&utm_content=551&utm_term=5043",
+            "image": "https://aol-releases-assets-production.s3.amazonaws.com/generator/ACBB7601.jpg",
+            "image_cdn": "https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Faol-releases-assets-production.s3.amazonaws.com%2Fgenerator%2FACBB7601.jpg&format=jpg&quality=80&thumbnail=640%2C420&client=14d356460ccd1a3da7ce&signature=eb331eba1737198dc8f3bf3494159012fd3b4e99",
+            "image_credit": "Getty Images",
+            "summary": "Late night snacking doesn&#39;t mean you have to grab a bag of chips or junk food. There are tons of healthy alternatives.",
+            "link_line": "They&#39;re actually good for you",
+            "category": "Lifestyle",
+            "source": {
+                "name": "AOL",
+                "key": "aol",
+                "url": "https://www.aol.com/",
+                "sponsored": false,
+                "hide": true
+            },
+            "related_links": {
+                "title": "More To Read",
+                "links": [
+                    {
+                        "title": "Best Bites: One-pan cilantro lime pork chops",
+                        "url": "https://www.aol.com/article/lifestyle/2020/07/20/one-pan-cilantro-lime-pork-chops-are-quick-and-easy-to-make/23727827/"
+                    },
+                    {
+                        "title": "Shop Sur La Table cookware for up to 65 percent off",
+                        "url": "https://www.aol.com/article/lifestyle/2020/07/18/sur-la-table-sale/24554989/"
+                    }
+                ]
+            },
+            "start_date": "2020-07-21 00:00:00 -0400",
+            "end_date": "2020-07-22 00:00:00 -0400",
+            "ab": {
+                "winner": false
+            }
+        },
+        {
+            "position": 3,
+            "id": 219208,
+            "pinned": false,
+            "plid": 135072757,
+            "title_a": "Disney World bans eating, drinking while walking",
+            "title_b": "",
+            "url": "https://www.aol.com/article/news/2020/07/20/disney-world-bans-eating-drinking-while-walking-to-close-coronavirus-mask-loophole/24567424/",
+            "image": "https://aol-releases-assets-production.s3.amazonaws.com/generator/9FD0CA18.jpg",
+            "image_cdn": "https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Faol-releases-assets-production.s3.amazonaws.com%2Fgenerator%2F9FD0CA18.jpg&format=jpg&quality=80&thumbnail=640%2C420&client=14d356460ccd1a3da7ce&signature=166f3dce10fd764a9e59b6c92434046ce506a0e8",
+            "image_credit": "Getty Images",
+            "summary": "Disney World in Florida just closed a loophole to mandate that visitors who are moving wear face masks at all times during the coronavirus pandemic.",
+            "link_line": "Safety rules met with controversy",
+            "category": "News",
+            "source": {
+                "name": "AOL",
+                "key": "aol",
+                "url": "https://www.aol.com/",
+                "sponsored": false,
+                "hide": true
+            },
+            "related_links": {
+                "title": "More in news",
+                "links": [
+                    {
+                        "title": "Alex Trebek reveals future plans",
+                        "url": "https://www.aol.com/article/news/2020/07/19/alex-trebek-says-he-will-stop-hosting-jeopardy-when-i-start-slipping/24566463/"
+                    },
+                    {
+                        "title": "Trump flails in latest interview",
+                        "url": "https://www.aol.com/article/news/2020/07/19/trump-flails-in-interview-with-wallace-citing-false-and-nonexistent-data-on-covid-19/24566432/"
+                    }
+                ]
+            },
+            "start_date": "2020-07-20 12:26:00 -0400",
+            "end_date": "2020-07-21 12:26:00 -0400",
+            "ab": {
+                "winner": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "count": 2,
+    "data": [
+        {
+            "position": 1,
+            "id": 219242,
+            "pinned": false,
+            "plid": 740965366,
+            "title_a": "Dems choose replacement for Lewis on ballot",
+            "title_b": "",
+            "url": "https://www.aol.com/article/news/2020/07/20/georgia-dems-choose-state-chair-to-replace-lewis-on-ballot/24567572/",
+            "image": "https://aol-releases-assets-production.s3.amazonaws.com/generator/15E89A94.jpg",
+            "image_cdn": "https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Faol-releases-assets-production.s3.amazonaws.com%2Fgenerator%2F15E89A94.jpg&format=jpg&quality=80&thumbnail=640%2C420&client=14d356460ccd1a3da7ce&signature=fc0e90962c5383a1ee1aeedf1f6a8bf99e0711f4",
+            "image_credit": "Elijah Nouvelage / Reuters",
+            "summary": "Georgia Democrats voted overwhelmingly on Monday for state Sen. Nikema Williams, chair of the state party, to replace Rep. John Lewis on the ballot in November.",
+            "link_line": "Chosen out of 131 applicants",
+            "category": "News",
+            "source": {
+                "name": "AOL",
+                "key": "aol",
+                "url": "https://www.aol.com/",
+                "sponsored": false,
+                "hide": true
+            },
+            "related_links": {
+                "title": "More headlines",
+                "links": [
+                    {
+                        "title": "WH details focus for next aid package",
+                        "url": "https://www.aol.com/article/news/2020/07/20/trump-administration-says-next-coronavirus-aid-package-should-focus-on-kids-and-jobs-and-vaccines/24567487/"
+                    },
+                    {
+                        "title": "Jack Nicklaus reveals coronavirus battles",
+                        "url": "https://www.aol.com/article/news/2020/07/20/jack-nicklaus-wife-barbara-reveal-they-have-recovered-after-contracting-coronavirus/24567451/"
+                    }
+                ]
+            },
+            "start_date": "2020-07-20 16:59:00 -0400",
+            "end_date": "2020-07-21 16:59:00 -0400",
+            "ab": {
+                "winner": false
+            }
+        },
+        {
+            "position": 2,
+            "id": 219304,
+            "pinned": false,
+            "plid": 622957675,
+            "title_a": "Study: Polar bears could completely vanish in 80 years",
+            "title_b": "",
+            "url": "https://www.aol.com/article/news/2020/07/21/polar-bears-could-be-wiped-out-by-the-end-of-the-century/24568119/",
+            "image": "https://aol-releases-assets-production.s3.amazonaws.com/generator/58BC7851.jpg",
+            "image_cdn": "https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Faol-releases-assets-production.s3.amazonaws.com%2Fgenerator%2F58BC7851.jpg&format=jpg&quality=80&thumbnail=640%2C420&client=14d356460ccd1a3da7ce&signature=bed13237c71469e46768218d29c3884f1f981f3e",
+            "image_credit": "Reuters",
+            "summary": "A new study now suggests the Arctic species is at risk of being starved into extinction by the end of the century.",
+            "link_line": "Concerning new data",
+            "category": "News",
+            "source": {
+                "name": "AOL",
+                "key": "aol",
+                "url": "https://www.aol.com/",
+                "sponsored": false,
+                "hide": true
+            },
+            "related_links": {
+                "title": "More headlines",
+                "links": [
+                    {
+                        "title": "Michael Cohen sues William Barr",
+                        "url": "https://www.aol.com/article/news/2020/07/21/aclu-and-lawyers-sue-to-free-ex-trump-attorney-michael-cohen/24568067/"
+                    },
+                    {
+                        "title": "Biden drops hint about VP shortlist",
+                        "url": "https://www.aol.com/article/news/2020/07/21/biden-says-hes-getting-briefings-from-lawyers-on-vp-options/24567912/"
+                    }
+                ]
+            },
+            "start_date": "2020-07-21 10:35:00 -0400",
+            "end_date": "2020-07-22 10:35:00 -0400",
+            "ab": {
+                "winner": false
+            }
+        }
+    ]
+}
