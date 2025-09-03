@@ -60,10 +60,16 @@ export function Carousel({ items }: CarouselProps) {
         <div className={`${styles.carousel}`}>
             {slides}
             <div className={styles.carouselCount}>{`${visibleIndex + 1} of ${items.length}`}</div>
-            <button className={`${styles.carouselButton} ${styles.carouselPrev}`} onClick={handlePrev}>
+            <button
+                className={`${styles.carouselButton} ${styles.carouselPrev}`}
+                aria-label='Prev Slide'
+                onClick={handlePrev}>
                 {prevIcon}
             </button>
-            <button className={`${styles.carouselButton} ${styles.carouselNext}`} onClick={handleNext}>
+            <button
+                className={`${styles.carouselButton} ${styles.carouselNext}`}
+                aria-label='Next Slide'
+                onClick={handleNext}>
                 {nextIcon}
             </button>
         </div>

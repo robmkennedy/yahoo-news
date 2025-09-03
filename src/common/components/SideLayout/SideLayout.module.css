@@ -16,7 +16,7 @@
 @media (width >= 48em) {
     /* min sm width */
     .sideLayout {
-        grid-template-columns: 50% auto;
+        grid-template-columns: 60% auto;
         grid-template-areas: 'center side';
     }
 }

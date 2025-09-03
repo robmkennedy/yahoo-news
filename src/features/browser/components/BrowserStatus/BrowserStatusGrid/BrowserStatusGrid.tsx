@@ -9,7 +9,7 @@ type BrowserStatusGrid = {
 export function BrowserStatusGrid({ title, statuses }: BrowserStatusGrid) {
     const content = Array.from(statuses).map(([key, result]) => {
         return (
-            <div className={`${styles.status} ${result}`}>
+            <div className={`${styles.status} ${result}`} key={key}>
                 {result ? existsIcon : missingIcon}
                 {key}
             </div>
