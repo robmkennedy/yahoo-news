@@ -3,10 +3,18 @@ import { decodeString } from '@common/utils/formatter';
 import styles from './Article.module.css';
 
 type ArticleProps = {
-    type: 'center' | 'sidebar';
+    type: 'vertical' | 'horizontal';
     data: ArticleData;
 };
 
+/**
+ * Displays the image and title of an article. Can display the article horizontally or vertically.
+ * Vertical layout articles are shown in the Stories for You section.
+ * Horizontal layout article are shown in the Read More section.
+ * Text from the articles is decoded.
+ * @param type - the orientation of the article
+ * @param data - the article data from the news api
+ */
 export function Article({ type, data }: ArticleProps) {
     return (
         <a href={data.url} target={'_blank'} className={`${styles.article} ${styles[type]}`}>

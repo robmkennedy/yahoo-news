@@ -1,26 +1,18 @@
 import ReactMarkdown from 'react-markdown';
 import { Card } from '@common/components/Card/Card';
-import { LoadingBox } from '@common/components/LoadingBox/LoadingBox';
-import { MessageBox } from '@common/components/MessageBox/MessageBox';
-import { useAboutMarkupQuery } from '@features/about/api/useAboutMarkupQuery';
 import { useTranslation } from 'react-i18next';
-import aboutText from "@assets/docs/about.md?raw";
-import readmeText from "/README.md?raw";
+import readmeText from '/README.md?raw';
 
+/**
+ * Shows information about this application. To avoid repetition of documentation, it uses the README.md file.
+ * The markup file is parsed to HTML using the react-markdown library and then inserted in to a Card.
+ */
 export function AboutPage() {
-    const { data, isPending, isSuccess, isError } = useAboutMarkupQuery();
     const { t } = useTranslation();
 
-    let content = null;
-    if (isError) {
-        content = <MessageBox type='error' message={t('about.error')} />;
-    } else if (isPending) {
-        content = <LoadingBox message={t('about.loading')} />;
-    } else if (isSuccess) {
-        if (data) {
-            content = <ReactMarkdown children={readmeText} />;
-        }
-    }
-
-    return <Card title={t('about.title')}>{content}</Card>;
+    return (
+        <Card title={t('about.title')}>
+            <ReactMarkdown children={readmeText} />
+        </Card>
+    );
 }

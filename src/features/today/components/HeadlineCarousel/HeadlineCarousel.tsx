@@ -6,6 +6,11 @@ import { HeadlineSlide } from '@features/today/components/HeadlineCarousel/Headl
 import { useHeadlineNewsQuery } from '@features/today/api/useHeadlineNewsQuery';
 import { useTranslation } from 'react-i18next';
 
+/**
+ * Uses the common Carousel component to display a carousel of headlines.
+ * Uses a react-query custom hook to get the news data.
+ * Also handles the loading and error states when fetching the news data.
+ */
 export function HeadlineCarousel() {
     const { data, isPending, isSuccess, isError } = useHeadlineNewsQuery();
     const { t } = useTranslation();

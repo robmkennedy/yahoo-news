@@ -9,6 +9,14 @@ type ModalDialogProps = PropsWithChildren & {
     onClose: () => void;
 };
 
+/**
+ * A modal dialog that restricts background usage when shown. Uses the html standard <dialog> tag.
+ * Can also be cancelled by clicking the Close button or the escape key.
+ * @param title - the test to show at the top of the dialog
+ * @param isOpen - opens or closes the dialog window
+ * @param onClose - a callback that triggers when the dialog is closed
+ * @param children - the content to show within the dialog
+ */
 export function ModalDialog({ title, isOpen, onClose, children }: ModalDialogProps) {
     const dialogRef = useRef<HTMLDialogElement | null>(null);
     const { t } = useTranslation();

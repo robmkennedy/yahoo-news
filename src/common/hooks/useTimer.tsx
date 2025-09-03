@@ -1,6 +1,12 @@
 import { useEffect, useRef } from 'react';
 
-export const useTimer = (callback: () => void, delay: number | null ) => {
+/**
+ * A custom hook used to start a timer.
+ * The delay time can be changed dynamically and the timer can be stopped and restarted if needed.
+ * @param callback - the function to call every time the delay time is reached.
+ * @param delay - the number of milliseconds of the interval. Can be set to null to stop the timer.
+ */
+export const useTimer = (callback: () => void, delay: number | null) => {
     const savedCallback = useRef<() => void | null>(null);
 
     // Remember the latest callback.
@@ -18,4 +24,4 @@ export const useTimer = (callback: () => void, delay: number | null ) => {
             return () => clearInterval(id);
         }
     }, [delay]);
-}
+};

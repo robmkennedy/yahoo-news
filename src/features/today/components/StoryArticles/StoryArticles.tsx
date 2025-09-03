@@ -6,6 +6,12 @@ import { useStoryNewsQuery } from '@features/today/api/useStoryNewsQuery';
 import { useTranslation } from 'react-i18next';
 import styles from './StoryArticles.module.css';
 
+/**
+ * Shows a grid of "Stories for You" inside a Card component.
+ * Each article is layout vertical and is located below the carousel.
+ * Uses a react-query custom hook to get the news data.
+ * Also handles the loading and error states when fetching the news data.
+ */
 export function StoryArticles() {
     const { data, isPending, isSuccess, isError } = useStoryNewsQuery();
     const { t } = useTranslation();
@@ -18,7 +24,7 @@ export function StoryArticles() {
         content = <LoadingBox message={t('stories.articles.loading')} />;
     } else if (isSuccess) {
         articles = data?.data.map((articleData) => {
-            return <Article key={articleData.id} type='center' data={articleData} />;
+            return <Article key={articleData.id} type='vertical' data={articleData} />;
         });
         content = <div className={styles.storyArticlesGrid}>{articles}</div>;
     }

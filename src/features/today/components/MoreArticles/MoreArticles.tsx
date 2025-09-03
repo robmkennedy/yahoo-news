@@ -6,6 +6,12 @@ import { useMoreNewsQuery } from '@features/today/api/useMoreNewsQuery';
 import { useTranslation } from 'react-i18next';
 import styles from './MoreArticles.module.css';
 
+/**
+ * Shows a list of more articles to read inside a Card component.
+ * Each article is layout horizontal and is located in the sidebar.
+ * Uses a react-query custom hook to get the news data.
+ * Also handles the loading and error states when fetching the news data.
+ */
 export function MoreArticles() {
     const { data, isPending, isSuccess, isError } = useMoreNewsQuery();
     const { t } = useTranslation();
@@ -17,7 +23,7 @@ export function MoreArticles() {
         content = <LoadingBox message={t('more.articles.loading')}/>;
     } else if (isSuccess) {
         content = data?.data.map((articleData) => {
-            return <Article key={articleData.id} type='sidebar' data={articleData} />;
+            return <Article key={articleData.id} type='horizontal' data={articleData} />;
         });
     }
 

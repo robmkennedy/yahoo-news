@@ -9,14 +9,14 @@
         border-radius: var(--radius-md);
     }
 
-    &.center {
+    &.vertical {
         flex-direction: column;
         .articleImage {
             margin-bottom: var(--padding-lg);
         }
     }
 
-    &.sidebar {
+    &.horizontal {
         .articleImage {
             margin-right: var(--padding-lg);
             width: 50%;

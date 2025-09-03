@@ -2,12 +2,12 @@ import { loadingIcon } from '@assets/images/icons';
 import styles from './LoadingBox.module.css';
 
 type LoadingBoxProps = {
-    message?: string;
+    message: string;
 };
 
 /**
- * A component used to display a loading message to the user.
- * If no specific message prop is supplied, a default loading message is used.
+ * Used to display a loading message to the user. Also shows a spinner icon.
+ * @param message - the loading message to show
  */
 export function LoadingBox({ message }: LoadingBoxProps) {
     return (

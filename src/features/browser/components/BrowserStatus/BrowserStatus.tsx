@@ -3,6 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { apisMap } from '@common/utils/supportedApis';
 import styles from './BrowserStatus.module.css';
 
+/**
+ * Displays information regarding the current browser.
+ * The first section displays the UserAgent string.
+ * The second section shows a list of experimental Web APIs and whether they are supported.
+ */
 export function BrowserStatus() {
     const { t } = useTranslation();
 

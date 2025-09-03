@@ -9,14 +9,21 @@ type CarouselProps = {
 
 const autoIncrementTime = 4000;
 
-const getNextIndex = (totalCount: number, index: number) => {
+const getNextIndex = (totalCount: number, index: number): number => {
     return index === totalCount - 1 ? 0 : index + 1;
 };
 
-const getPrevIndex = (totalCount: number, index: number) => {
+const getPrevIndex = (totalCount: number, index: number): number => {
     return index === 0 ? totalCount - 1 : index - 1;
 };
 
+/**
+ * Shows an array of slides, one slide at a time.
+ * The slides will wrap if the first/last slide is reached.
+ * A timer function will automatically move to the next slide.
+ * Contains buttons to control forward/back and a count indicator showing the number of the current visible slide.
+ * @param items - an array of items to show. Each item will be wrapped by its own slide.
+ */
 export function Carousel({ items }: CarouselProps) {
     const [visibleIndex, setVisibleIndex] = useState(0);
     const [timerDelay, setTimerDelay] = useState<number | null>(autoIncrementTime);

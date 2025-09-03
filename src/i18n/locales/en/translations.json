@@ -53,13 +53,10 @@
         "title": "Browser Information",
         "config": {
             "agent": "User Agent",
-            "apis": "Supported Experimental Web APIs",
-            "styles": "Supported CSS Features"
+            "apis": "Supported Experimental Web APIs"
         }
     },
     "about": {
-        "title": "About Application",
-        "loading": "Loading application markup information...",
-        "error": "Unable to load markup content for the application!"
+        "title": "About Application"
     }
 }

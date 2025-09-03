@@ -1,8 +1,12 @@
 import { HeaderLink } from '@common/components/HeaderPanel/HeaderNav/HeaderLink/HeaderLink';
-import { useTranslation } from 'react-i18next';
 import { todayIcon, aboutIcon } from '@/assets/images/icons';
+import { useTranslation } from 'react-i18next';
 import styles from './HeaderNav.module.css';
 
+/**
+ * The component that holds the nav links in the header.
+ * Is aligned with the header logo and remains to the right within the header.
+ */
 export function HeaderNav() {
     const { t } = useTranslation();
 

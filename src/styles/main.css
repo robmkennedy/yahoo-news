@@ -33,3 +33,9 @@ a {
 a:hover {
     color: var(--color-grape);
 }
+
+code {
+    color: var(--color-loading);
+    border-radius: var(--radius-sm);
+    font-style: italic;
+}

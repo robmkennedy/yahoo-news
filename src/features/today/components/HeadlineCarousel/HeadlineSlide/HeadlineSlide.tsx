@@ -6,6 +6,11 @@ type HeadlineSlideProps = {
     data: ArticleData;
 };
 
+/**
+ * A slide to be shown in the headline carousel.
+ * Includes an overlay to display the title and summary of the article.
+ * @param data - the data of the article to be shown in this particular slide
+ */
 export function HeadlineSlide({ data }: HeadlineSlideProps) {
     return (
         <a href={data.url} target={'_blank'} className={styles.headlineSlide}>

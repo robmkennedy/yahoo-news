@@ -4,6 +4,11 @@ import { ModalDialog } from '@common/components/ModalDialog/ModalDialog';
 import { BrowserStatus } from '@features/browser/components/BrowserStatus/BrowserStatus';
 import { useTranslation } from 'react-i18next';
 
+/**
+ * Contains the button to open the dialog AND the dialog itself.
+ * Maintains a React state to indicate whether the dialog is opened or closed.
+ * Uses the common ModalDialog component.
+ */
 export function BrowserDialog() {
     const { t } = useTranslation();
     const [isDialogOpen, setDialogOpen] = useState(false);

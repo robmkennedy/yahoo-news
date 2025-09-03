@@ -15,7 +15,9 @@ const iconMap = {
 };
 
 /**
- * A common component used to display a message to the user.
+ * Displays a message to the user. An icon corresponding to the message severity is displayed before the text.
+ * @param type - indicates if the message is good, bad, or a warning
+ * @param message - the message text to show
  */
 export function MessageBox({ type, message }: MessageBoxProps) {
     const icon = iconMap[type];

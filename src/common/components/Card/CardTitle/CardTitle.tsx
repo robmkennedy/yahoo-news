@@ -4,6 +4,10 @@ type CardTitleProps = {
     text: string;
 };
 
+/**
+ * Allows common styling for the title of a card.
+ * @param text - the text to show
+ */
 export function CardTitle({ text }: CardTitleProps) {
     return (
         <div className={`${styles.cardTitle}`}>
