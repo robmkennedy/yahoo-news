@@ -1,12 +1,12 @@
-import styles from './RegistrationForm.module.css';
-import { Card } from '@common/components/Card/Card';
-import { useTranslation } from 'react-i18next';
-import { TextInput } from '@common/components/TextInput/TextInput';
-import { Button } from '@common/components/Button/Button';
 import { type ChangeEvent, useState } from 'react';
-import { decodeString, validateEmail } from '@/utils/formatter';
 import type { StatusMessage } from '@common/types/commonTypes';
-import MessageBox from '@common/components/MessageBox/MessageBox';
+import { Card } from '@common/components/Card/Card';
+import { Button } from '@common/components/Button/Button';
+import { TextInput } from '@common/components/TextInput/TextInput';
+import { MessageBox } from '@common/components/MessageBox/MessageBox';
+import { decodeString, validateEmail } from '@/utils/formatter';
+import { useTranslation } from 'react-i18next';
+import styles from './RegistrationForm.module.css';
 
 export function RegistrationForm() {
     const { t } = useTranslation();

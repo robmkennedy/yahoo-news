@@ -11,12 +11,13 @@ const iconMap = {
     info: infoIcon,
     error: errorIcon,
     success: successIcon,
-    warning: warningIcon};
+    warning: warningIcon
+};
 
 /**
  * A common component used to display a message to the user.
  */
-const MessageBox = ({ type, message }: MessageBoxProps) => {
+export function MessageBox({ type, message }: MessageBoxProps) {
     const icon = iconMap[type];
     return (
         <div className={`${styles.messageBox}`}>
@@ -26,6 +27,4 @@ const MessageBox = ({ type, message }: MessageBoxProps) => {
             </div>
         </div>
     );
-};
-
-export default MessageBox;
+}

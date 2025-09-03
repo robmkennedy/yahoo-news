@@ -1,10 +1,24 @@
-import { Container } from '@common/components/Container/Container';
+import ReactMarkdown from 'react-markdown';
+import { Card } from '@common/components/Card/Card';
+import { LoadingBox } from '@common/components/LoadingBox/LoadingBox';
+import { MessageBox } from '@common/components/MessageBox/MessageBox';
+import { useAboutMarkupQuery } from '@features/about/api/useAboutMarkupQuery';
+import { useTranslation } from 'react-i18next';
 
-/**
- * The home page of the application. It presents a search bar to the user allowing
- * them to search for a particular movie based on title. IF a movie is found, the poster
- * and detail information for the movie is displayed beneath the search bar.
- */
 export function AboutPage() {
-    return <Container className='aboutPage'>About page</Container>;
+    const { data, isPending, isSuccess, isError } = useAboutMarkupQuery();
+    const { t } = useTranslation();
+
+    let content = null;
+    if (isError) {
+        content = <MessageBox type='error' message={t('about.error')} />;
+    } else if (isPending) {
+        content = <LoadingBox message={t('about.loading')} />;
+    } else if (isSuccess) {
+        if (data) {
+            content = <ReactMarkdown children={data} />;
+        }
+    }
+
+    return <Card title={t('about.title')}>{content}</Card>;
 }

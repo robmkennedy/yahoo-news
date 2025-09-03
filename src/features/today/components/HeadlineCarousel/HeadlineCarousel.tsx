@@ -1,10 +1,10 @@
 import { Card } from '@common/components/Card/Card';
 import { Carousel } from '@common/components/Carousel/Carousel';
+import { MessageBox } from '@common/components/MessageBox/MessageBox';
+import { LoadingBox } from '@common/components/LoadingBox/LoadingBox';
 import { HeadlineSlide } from '@features/today/components/HeadlineCarousel/HeadlineSlide/HeadlineSlide';
 import { useHeadlineNewsQuery } from '@features/today/api/useHeadlineNewsQuery';
 import { useTranslation } from 'react-i18next';
-import MessageBox from '@common/components/MessageBox/MessageBox';
-import LoadingBox from '@common/components/LoadingBox/LoadingBox';
 
 export function HeadlineCarousel() {
     const { data, isPending, isSuccess, isError } = useHeadlineNewsQuery();

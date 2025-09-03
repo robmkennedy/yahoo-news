@@ -1,10 +1,10 @@
-import { useMoreNewsQuery } from '@features/today/api/useMoreNewsQuery';
-import { Article } from '@features/today/components/Article/Article';
-import styles from './MoreArticles.module.css';
 import { Card } from '@common/components/Card/Card';
+import { Article } from '@features/today/components/Article/Article';
+import { MessageBox } from '@common/components/MessageBox/MessageBox';
+import { LoadingBox } from '@common/components/LoadingBox/LoadingBox';
+import { useMoreNewsQuery } from '@features/today/api/useMoreNewsQuery';
 import { useTranslation } from 'react-i18next';
-import MessageBox from '@common/components/MessageBox/MessageBox';
-import LoadingBox from '@common/components/LoadingBox/LoadingBox';
+import styles from './MoreArticles.module.css';
 
 export function MoreArticles() {
     const { data, isPending, isSuccess, isError } = useMoreNewsQuery();

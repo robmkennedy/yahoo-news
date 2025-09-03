@@ -4,7 +4,7 @@
             "title": "News",
             "nav": {
                 "today": "Today's News",
-                "about": "About This Page"
+                "about": "About This App"
             }
         }
     },
@@ -58,9 +58,8 @@
         }
     },
     "about": {
-        "markdown": {
-            "loading": "Loading information...",
-            "error": "An error occurred while loading information."
-        }
+        "title": "About Application",
+        "loading": "Loading application markup information...",
+        "error": "Unable to load markup content for the application!"
     }
 }
