@@ -22,6 +22,7 @@ body {
     color: var(--color-text);
     font-size: var(--font-size-14);
     font-weight: var(--font-weight-medium);
+    background-color: var(--color-body);
 }
 
 a {

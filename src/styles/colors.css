@@ -1,11 +1,13 @@
 :root {
-    --color-text: var(--color-batcave);
     --color-info: blue;
     --color-warning: orange;
     --color-success: green;
     --color-error: red;
     --color-loading: #078caf;
     --color-hover: #ad4efb;
+    --color-body: var(--color-white);
+    --color-text: var(--color-batcave);
+    --color-border: var(--color-seagull);
     --color-input-border: var(--color-seagull);
     --color-control-background: rgba(0, 0, 0, 0.3);
 

@@ -21,4 +21,18 @@
         border-radius: var(--radius-md);
         background-color: var(--color-control-background);
     }
+
+    .title {
+        font-size: var(--font-size-16);
+
+        @media (width >= 48em) {
+            /* min sm width */
+            font-size: var(--font-size-18);
+        }
+
+        @media (width >= 62em) {
+            /* min md width */
+            font-size: var(--h2-font-size);
+        }
+    }
 }

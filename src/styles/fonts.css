@@ -7,6 +7,9 @@
     --heading-text-wrap: wrap;
     --heading-font-weight: 700;
 
+    --icon-width: 1.25rem;
+    --icon-width-header: 1.5rem;
+
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 600;
@@ -30,8 +33,12 @@
     --font-size-34: 2.125rem;
     --font-size-36: 2.25rem;
 
-    --icon-width: 1.25rem;
-    --icon-width-header: 1.5rem;
+    --h1-font-size: 2em ;
+    --h2-font-size: 1.5em;
+    --h3-font-size: 1.17em;
+    --h4-font-size: 1em;
+    --h5-font-size: 0.83em;
+    --h6-font-size: 0.67em;
 }
 
 h1, h2, h3, h4, h5, h6 {

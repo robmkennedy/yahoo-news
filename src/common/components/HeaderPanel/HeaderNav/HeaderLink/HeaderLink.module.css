@@ -3,8 +3,14 @@
     align-items: center;
 
     svg {
+        display: none;
         width: var(--icon-width-header);
         margin-right: var(--spacing-xs);
+
+        @media (width >= 48em) {
+            /* min sm width */
+            display: block;
+        }
     };
 
     &:global(.active) {
