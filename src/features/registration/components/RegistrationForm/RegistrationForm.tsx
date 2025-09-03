@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 import styles from './RegistrationForm.module.css';
 
 /**
- * The form used to accept users email to register for a newsletter.
+ * The form is used to accept users email to register for a newsletter.
  * The common Button, TextInput, and MessageBox components are used.
  * When the signup button is clicked, the email is validated and the message displayed.
  * The form mimics actual signup by also providing a message if the email already exists.
