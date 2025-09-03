@@ -1,8 +1,8 @@
 :root {
-    --color-info: blue;
-    --color-warning: orange;
-    --color-success: green;
-    --color-error: red;
+    --color-info: #0000c1;
+    --color-warning: #c58101;
+    --color-success: #007000;
+    --color-error: #c60303;
     --color-loading: #078caf;
     --color-hover: #ad4efb;
     --color-body: var(--color-white);
