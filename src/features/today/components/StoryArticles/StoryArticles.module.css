@@ -6,11 +6,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: var(--spacing-xl) var(--spacing-lg);
-    }
 
-    @media (width >= 75em) {
-        /* min lg width */
-        .storyArticlesGrid {
+        @media (width >= 75em) {
+            /* min lg width */
             grid-template-columns: repeat(3, 1fr);
         }
     }

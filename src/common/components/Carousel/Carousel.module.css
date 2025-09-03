@@ -27,10 +27,15 @@
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        padding: var(--spacing-xl) var(--padding-md);
+        padding: var(--spacing-md) var(--padding-sm);
         background-color: var(--color-control-background);
         color: var(--color-white);
         border: 0;
+
+        @media (width >= 62em) {
+            /* min md width */
+            padding: var(--spacing-xl) var(--padding-md);
+        }
 
         &:hover {
             color: var(--color-hover);
