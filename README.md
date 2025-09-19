@@ -10,6 +10,7 @@ The app is hosted at [https://robmkennedy.github.io/yahoo-news](https://robmkenn
 - All components are built with vanilla Typescript and CSS modules.
 
 
+
 ## App Layout
 
 The app provides two possible routes
